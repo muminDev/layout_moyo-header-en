@@ -1,6 +1,9 @@
 /* Styles go here */
 body {
   margin: 0;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 .navigationBar {
@@ -21,26 +24,19 @@ body {
 }
 
 .nav_item {
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
   padding: 0;
   margin-left: 20px;
   font-size: 12px;
   box-sizing: border-box;
 
+  position: relative;
   display: flex;
   align-items: center;
-  position: relative;
   cursor: pointer;
 }
 
 .nav_item:first-child {
   margin-left: 0;
-}
-
-.nav_link {
-  height: 60px;
 }
 
 .icon {
@@ -53,28 +49,21 @@ body {
   padding: 0;
 }
 
-a {
+.nav_link {
   color: black;
   text-decoration: none;
   display: flex;
   align-items: center;
-  height: auto;
-  width: auto;
+  height: 60px;
 }
 
-a:hover {
+.nav_link:hover {
   color: #00acdc;
 }
 
 .is-active {
   color: #00acdc;
 }
-
-/* 
-.nav_itemApple {
-  border-bottom: 4px solid #00acdc;
-  margin-left: 0;
-} */
 
 .is-active::after {
   content: "";
